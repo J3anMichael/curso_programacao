@@ -6,7 +6,7 @@ public class variaveis_e_tipos_basiscos {
         boolean cool = true;
         String nome = "Jean Michael";
 
-        System.out.println(nome);
+        System.out.println("Meu nome é " + nome + " e eu tenho " + idade + " anos!");
 
 
     }
