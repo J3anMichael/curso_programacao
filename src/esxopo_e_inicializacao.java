@@ -6,17 +6,17 @@ public class esxopo_e_inicializacao {
         // Escopo e Inicialização;
 
         Scanner sc = new Scanner(System.in);
-        double price = 200.00;
-        double discount = 5.00;
+        double price;
+        double discount = 0.5;
+        double total;
 
-        sc.nextDouble();
-        if (price < 200.00) {
-            discount = price * 0.01;
+        price = sc.nextDouble();
+        if (price > 100) {
+            total = price - (price * discount);
         } else {
-            discount = price * 0.05;
+            total = price;
         }
-        System.out.println("Valor total: R$" + (price - discount));
-
+        System.out.println(total);
         sc.close();
     }
 }
