@@ -19,6 +19,9 @@ public class estrutura_for {
         System.out.println(soma);
 
 
+
+
+
         sc.close();
     }
 
