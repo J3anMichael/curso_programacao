@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class funcoes_interessantes_string {
     public static void main(String[] args) {
 
@@ -37,6 +39,9 @@ public class funcoes_interessantes_string {
         String s09 = original.replace("DEF", "xyz");
         String s10 = original.replace("def", "xyz");
 
+        String nome = "Jean Michael";
+        String nome2 = nome.toLowerCase();
+
 
         System.out.println(s01);
         System.out.println(s02);
@@ -48,6 +53,8 @@ public class funcoes_interessantes_string {
         System.out.println(s08);
         System.out.println(s09);
         System.out.println(s10);
+        System.out.println(nome2);
+
 
     }
 }
