@@ -26,7 +26,7 @@ public class funcoes_java {
     }
     // Função para encontrar o maior número.
     public static int max(int x, int y, int z){
-        int aux;
+        int aux; // Variável que vai receber o resultado da comparação.
         if(x > y && x > z){
             aux = x;
         } else if(y > z){
@@ -34,7 +34,7 @@ public class funcoes_java {
         } else {
             aux = z;
         }
-        return aux;
+        return aux; // Retorna o maior número.
     }
     // Função para mostrar o maior número.
     public static void ShowBiggest(int value){
