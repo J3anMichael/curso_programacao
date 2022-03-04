@@ -10,7 +10,7 @@ public class problema_sem_oo {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Triangle x, y; // chamamos os objetos x e y da classe Triangle
+        Triangle x, y; // chamamos nossa class Triangle passando as variaveis x e y como parametros.
         x = new Triangle(); // instanciamos o objeto x
         y = new Triangle(); // instanciamos o objeto y
 
@@ -23,10 +23,11 @@ public class problema_sem_oo {
         y.a = sc.nextDouble();
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+
+        double areaX = x.area();
+
+        double areaY = y.area();
+
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
         if (areaX > areaY) {
